@@ -1,0 +1,64 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'news/css/news_style.css'%}">
+{% endblock %}
+
+{% block main %}
+
+<div class="features">
+    <h1 style="text-align: center;">TEСH-IT-NEWS</h1>
+    <p>Здравствуйте. Мы TEH-IT-NEWS, хотим представть вам наш сайт для удобного мониторинга свежих новостей IT индустрии.</p>
+    <p>На нашем сайте вы сможете посмотреть самые новые и интересные изменения и научные открытия в мире програмирования, информационной безопасности и компьютерной науки в целом. Так же на нашем сайте мы предоставляем вам возможность опубликовывать свои новости чтобы другие пользователи тоже могли узнать много нового.</p>
+    <br>
+    <h2 style="text-align: center;">Новые публикации</h2>
+    <ul>
+        <li>
+            <h3>Робот-андроид EveR-6 дирижировал корейским оркестром на фестивале музыки <a href="{% url 'Post' 1%}" class="redi_new">(смотреть стр.2)</a></h3>
+        </li>
+        <li>
+            <h3>CS50 Гарвардского университета: как один из самых популярных онлайн-курсов по информатике интегрирует ИИ<a href="{% url 'Post' 2%}" class="redi_new">(смотреть стр.3)</a></h3>
+        </li>
+        <li>
+            <h3>Китайские исследователи создали процессор за пять часов с помощью ИИ<a href="{% url 'Post' 3%}" class="redi_new">(смотреть стр.4)</a></h3>
+        </li>
+        <li>
+            <h3>Поставщик TSMC стал жертвой хакеров, они требуют выкупа в $70 млн<a href="{% url 'Post' 4%}" class="redi_new">(смотреть стр.5)</a></h3>
+        </li>
+    </ul>
+    <div style="margin-left:600px; margin-top: 350px;">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">&laquo;</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="{% url 'Home' %}">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 1%}">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 2%}">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 3%}">4</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 4%}">5</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 1%}">&raquo;</a>
+    </li>
+  </ul>
+</div>
+
+</div>
+
+
+{% endblock %}
+

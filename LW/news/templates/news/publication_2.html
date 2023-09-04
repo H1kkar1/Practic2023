@@ -1,0 +1,81 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'news/css/news_style.css'%}">
+{% endblock %}
+
+{% block main %}
+
+<div style="padding-top:10px; margin-left:100px; width:75%;">
+    <h1 class="tm-title tm-title_h1" lang="ru" style="text-align: center;">CS50 Гарвардского университета: как один из самых популярных онлайн-курсов по информатике интегрирует ИИ</h1><br><br>
+    <p>Вы когда-нибудь мечтали о том, чтобы у вас был личный репетитор, который мог бы помочь вам с вашими заданиями по программированию, объяснением ошибок и получением обратной связи? Что, если бы этот репетитор был доступен круглосуточно и работал на искусственном интеллекте? Таково видение CS50 Гарвардского университета, одного из самых популярных в мире онлайн-курсов в области компьютерных наук.</p>
+    <img src="{% static 'news/img/ii-1.png' %}">
+    <hr />
+    <p><strong>CS50: глобальное явление в онлайн-обучении</strong></p>
+    <p><a href="https://cs50.harvard.edu/x/2023/" rel="noopener noreferrer nofollow">CS50 (Computer Science 50)</a>&nbsp;&mdash; это вводный курс по информатике Гарвардского университета, стартовавший в 2012 году, который охватывает основы программирования, алгоритмов, структур данных и веб-разработки. За прошедшие годы на курс записалось&nbsp;<a href="https://iblnews.org/harvard-universitys-cs50-online-course-will-add-ai-teacher-assistants/" rel="noopener noreferrer nofollow">более 4,7 миллиона человек</a>. Теперь он доступен как часть платформы цифрового обучения&nbsp;<a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" rel="noopener noreferrer nofollow">edX</a>, которая была создана Гарвардом и Массачусетским технологическим институтом для предложения онлайн-курсов университетского уровня по различным предметам. Курс ведёт профессор&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BB%D0%B0%D0%BD,_%D0%94%D1%8D%D0%B2%D0%B8%D0%B4" rel="noopener noreferrer nofollow">Дэвид Дж. Малан</a>, известный своим энергичным и увлекательным стилем преподавания. CS50 также имеет 1,4 миллиона подписчиков&nbsp;<a href="https://www.youtube.com/@cs50" rel="noopener noreferrer nofollow">YouTube&nbsp;</a>и&nbsp;<a href="https://cs50.harvardshop.com/" rel="noopener noreferrer nofollow">фирменные товары</a>, такие как мячи для снятия стресса и футболки.</p>
+    <p><iframe id="64a1ab5c53324501d3e63f40" src="https://embedd.srv.habr.com/iframe/64a1ab5c53324501d3e63f40" width="740" height="416" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></p>
+    <p>Начиная с этой осени, студенты смогут использовать ИИ для проверки своего кода на наличие ошибок, получения обратной связи по проектированию учебных приложений, объяснения незнакомых строк кода или сообщений об ошибках и ответа на отдельные вопросы. Для этого они будут использовать специальные программные инструменты, разработанные командой CS50.</p>
+    <p>&laquo;Мы надеемся, что с помощью ИИ сможем в итоге приблизиться к соотношению учителей и учеников один к одному в CS50, предоставляя студентам программные инструменты, которые круглосуточно 7 дней в неделю могут обучать их в том темпе и в стиле, который лучше всего подходит для них индивидуально&raquo;, &mdash; написал профессор Малан.</p>
+    <p>Вместе с тем, по его мнению, программы искусственного интеллекта, такие как ChatGPT и GitHub Copilot, &laquo;в настоящее время полезны сверх меры&raquo;. В CS50 технология искусственного интеллекта будет &laquo;похожей по духу&raquo;, но будет &laquo;направлять учащихся к ответу, а не передавать его им&raquo;, добавил он.</p>
+    <p>В настоящее время его команда настраивает систему искусственного интеллекта для оценки работы студентов и тестирует виртуального помощника преподавателей для оценки и предоставления отзывов по программированию. По его словам, виртуальный помощник задаёт риторические вопросы и предлагает советы, которые помогут студентам учиться, а не просто выявляют и исправляют ошибки в коде. В долгосрочной перспективе он ожидает, что это даст реальным ассистентам преподавателей больше времени для личных занятий или работы в Zoom.</p>
+    <p>ИИ, включённый в CS50, поможет студентам учиться находить ошибки в их коде, &laquo;а не непосредственные решения заданий&raquo;. Новые программы также объяснят потенциально сложные сообщения об ошибках более простыми словами и предложат потенциальные &laquo;удобные для студентов советы по их решению&raquo;.</p>
+    <p><iframe id="64a1abc90e9e1c486a6b4eb1" src="https://embedd.srv.habr.com/iframe/64a1abc90e9e1c486a6b4eb1" width="740" height="416" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></p>
+    <p>В то время как профессор Малан стремится добавить ИИ в CS50 в качестве ресурса для студентов, он написал, что сам курс не усложнится. На вопрос, не беспокоит ли его мошенничество с использованием ИИ и другие формы академической нечестности, профессор Малан ответил, что студенты всегда могли получить доступ к информации потенциально несанкционированными способами.</p>
+    <p>&laquo;Но ИИ действительно способствует этому, тем более анонимно и масштабируемо&raquo;, &mdash; добавил профессор Малан. &laquo;Тогда лучше сделать все больший акцент на этике в курсе, чтобы студенты учились под руководством, как ориентироваться в этих новых водах&raquo;.</p>
+    <p><strong>CS50: преобразование онлайн-обучения при помощи ИИ</strong></p>
+    <p>CS50 также доступен для студентов, не обучающихся в Гарварде, на онлайн-платформе&nbsp;<a href="https://www.edx.org/school/harvardx" rel="noopener noreferrer nofollow">edX</a>. Новая политика в отношении искусственного интеллекта будет распространяться и на версию edX. &laquo;Даже если вы не являетесь студентом Гарварда, вы можете &laquo;пройти&raquo; этот курс бесплатно, проработав одиннадцать недель материала курса&raquo;, &mdash; говорится на&nbsp;<a href="https://cs50.harvard.edu/x/2023/" rel="noopener noreferrer nofollow">сайте</a>. Преподаватели других учебных заведений также могут лицензировать материалы для своих курсов.</p>
+    <p>&laquo;Предоставление поддержки, адаптированной к конкретным вопросам студентов, уже давно является проблемой в масштабах edX и OpenCourseWare в целом, с таким большим количеством студентов онлайн, поэтому эти функции принесут пользу студентам как в кампусе, так и за его пределами&raquo;, &mdash; говорит профессор Малан.</p>
+    <p><iframe id="64a1ac0465e33b481534fb60" src="https://embedd.srv.habr.com/iframe/64a1ac0465e33b481534fb60" width="740" height="416"></iframe></p>
+    <p>Источники:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.bloomberg.com/news/articles/2023-06-03/harvard-s-hit-computer-science-class-cs50-to-adopt-ai" rel="noopener noreferrer nofollow">Bloomberg</a></p>
+    </li>
+    <li>
+    <p><a href="https://fortune.com/2023/06/03/ai-to-help-teach-harvard-university-online-computer-science-course/" rel="noopener noreferrer nofollow">Fortune</a></p>
+    </li>
+    <li>
+    <p><a href="https://www.livemint.com/news/world/harvard-universitys-popular-online-computer-course-to-use-ai-to-for-grading-of-assignments-11685753080969.html" rel="noopener noreferrer nofollow">Livemint.com</a></p>
+    </li>
+    <li>
+    <p><a href="https://www.thecrimson.com/article/2023/6/21/cs50-artificial-intelligence/" rel="noopener noreferrer nofollow">The Harvard Crimson</a></p>
+    </li>
+    <li>
+    <p><a href="https://www.pcmag.com/news/harvards-new-computer-science-teacher-is-a-chatbot" rel="noopener noreferrer nofollow">PCMag</a></p>
+    </li>
+    <li>
+    <p><a href="https://www.firstpost.com/world/harvard-is-planning-to-deploy-chatgpt-like-bot-as-instructor-in-computer-science-12804052.html" rel="noopener noreferrer nofollow">Firstpost</a></p>
+    </li>
+    </ul>
+</div><br>
+    <div style="margin-left:700px;">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 1%}">&laquo;</a>
+    </li>
+    <li class="page-item ">
+      <a class="page-link" href="{% url 'Home' %}">1</a>
+    </li>
+    <li class="page-item ">
+      <a class="page-link" href="{% url 'Post' 1%}">2</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="{% url 'Post' 2%}">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 3%}">4</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 4%}">5</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 3%}">&raquo;</a>
+    </li>
+  </ul>
+</div>
+{% endblock %}

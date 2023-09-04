@@ -1,0 +1,50 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'news/css/news_style.css'%}">
+{% endblock %}
+
+{% block main %}
+
+<div style="padding-top:10px; margin-left:100px; width:75%;">
+    <h1 style="text-align: center;">Поставщик TSMC стал жертвой хакеров, они требуют выкупа в $70 млн</h1><br><br>
+    <img src="{% static 'news/img/hac-1.jpg' %}" width="900" height="600">
+    <p>Крупнейший в мире производитель чипов TSMC столкнулся с вымогателями. Хакерская группировка LockBit объявила, что располагает данными компании и опубликует их, если TSMC не заплатит выкуп в $70 млн до 6 августа. В случае отказа от платежа &laquo;будут опубликованы точки входа в сеть, пароли и логины компании&raquo;, пишет LockBit.</p>
+    <p>Группировка не предоставила доказательств атаки. Более того, как пояснила сама&nbsp;TSMC, атаке подверглись не её системы, а системы одного из её поставщиков. Речь идёт о компании Kinmax Technology, которая специализируется на облачных вычислениях, хранении и управлении базами данных.&nbsp;</p>
+    <p>&laquo;По результатам проверки этот инцидент не повлиял на бизнес-операции TSMC и не поставил под угрозу информацию о клиентах TSMC&raquo;, &mdash;&nbsp;
+        <a href="https://techcrunch.com/2023/06/30/tsmc-confirms-data-breach-after-lockbit-cyberattack-on-third-party-supplier/" rel="noopener noreferrer nofollow">заявил</a>&nbsp;представитель компании в комментарии для TechCrunch.&nbsp;</p>
+    <p>TSMC уже прекратила операции с поставщиком. Сама Kinmax сообщает, что обнаружила атаку и утечку данных утром 29 июня. Kinmax также принесла извинения своим пострадавшим партнёрам, что, вероятно, означает, что инцидент задел не только TSMC. Как следует из информации на сайте Kinmax, в числе её партнёров такие компании, как HPE, Cisco, Microsoft, C
+        itrix и VMware. Ни одна из перечисленных организаций пока не сообщала о требованиях выкупа.</p>
+</div><br>
+
+<div style="margin-left:700px;">
+  <ul class="pagination">
+    <li class="page-item ">
+      <a class="page-link" href="{% url 'Post' 3%}">&laquo;</a>
+    </li>
+    <li class="page-item ">
+      <a class="page-link" href="{% url 'Home' %}">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 1%}">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 2%}">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="{% url 'Post' 3%}">4</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="{% url 'Post' 4%}">5</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link">&raquo;</a>
+    </li>
+  </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'news/css/news_style.css'%}">
+{% endblock %}
+
+{% block main %}
+
+<div id="publication 1" style="padding-top:10px; margin-left:100px; width:75%;">
+    <h1 style="text-align: center;">Робот-андроид EveR-6 дирижировал корейским оркестром на фестивале музыки</h1><br>
+        <p>Робот-андроид EveR-6 впервые&nbsp;<a href="https://www.reuters.com/technology/robot-takes-podium-orchestra-conductor-seoul-2023-06-30/" rel="noopener noreferrer nofollow">дирижировал</a>&nbsp;Национальным оркестром Южной Кореи на фестивале музыки в Сеуле.</p>
+        <img src="{% static 'news/img/rb-1.png' %}" width="500" height="300">
+        <p>Робот EveR-6&nbsp;<a href="https://www.hankyung.com/life/article/202306264740i" rel="noopener noreferrer nofollow">разработан</a>&nbsp;инженерами компании Samsung. Он способен анализировать звук, движения и эмоции исполнителей, а также адаптироваться к различным стилям и жанрам музыки.</p>
+        <p>По мнению экспертов, EveR-6 демонстрировал высокий уровень координации, выразительности и харизмы, завоевав восхищение зрителей и критиков в процессе своего первого выступления.</p>
+        <p>Перед началом выступления EveR-6 поклоном поприветствовал публику. Повернувшись к музыкантам, он стал дирижировать. Под управлением робота оркестр исполнил три произведения из пяти, прозвучавших на музыкальном мероприятии.</p>
+        <p>В итоге робот продемонстрировал, что может выполнять повторяющиеся движения на высокой скорости. В одной композиции EveR-6 работал в паре с живым дирижёром &mdash; корейским маэстро Чхве Су Ёлем.</p>
+        <p>Представители отрасли уточнили, что почти двухметрового робота создали в Корейском институте промышленных технологий. Благодаря гибким суставам EveR-6 может делать резкие движения, которым его обучил настоящий дирижёр. Для этого использовали специальную систему, которая фиксирует жесты с помощью датчиков, прикреплённых к телу человека.</p>
+        <img src="{% static 'news/img/rb-2.jpeg' %}" width="500" height="300">
+        <p>Разработчики проекта пояснили, что робот-андроид EveR-6 оснащён гибкими, имитирующими суставы и предплечья конструкциями. По мнению корейских музыкантов, при детально точных движениях и умении безупречно выдерживать ритм у EveR-6 есть существенный недостаток &mdash; отсутствие слуха. В перспективе разработчики хотят усовершенствовать робота, чтобы он стал вспомогательным инструментом для дирижёров.</p>
+        <p>Музыканты рассказали СМИ, что робот держит заданный темп от начала до конца исполнения, что тонизирует исполнителей и заставляет их быть собранными и успевать командами. С другой стороны, робот пока не может воспринимать музыку, как это делает человек. Например, если во время концерта дирижёр замечает даже самые мелкие ошибки музыкантов, то он быстро исправляет их, ускоряя или замедляя темп, а Ever-6 пока так не умеет.</p>
+        <p>Команда корейских разработчиков уже работает над созданием робота EveR-7, который по своим возможностям будет лучше предшественника.</p>
+        <img src="{% static 'news/img/rb-3.jpeg' %}" width="500" height="300">
+        <iframe width="740" height="416" src="https://www.youtube.com/embed/RzL-1ekOptQ" title="지휘봉 흔드는 로봇…&quot;정확하지만 사람 호흡 배려 못해 오류도&quot;/ 연합뉴스 (Yonhapnews)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="https://habr.com/ru/news/745396/"><h3>Источник статьи</h3></a>
+    </div><br>
+
+    <div style="margin-left:700px;" >
+      <ul class="pagination" data-bs-theme="dark">
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Home' %}">&laquo;</a>
+        </li>
+        <li class="page-item ">
+          <a class="page-link" href="{% url 'Home' %}">1</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="{% url 'Post' 1%}">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Post' 2%}">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Post' 3%}">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Post' 4%}">5</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Post' 2%}">&raquo;</a>
+        </li>
+      </ul>
+    </div>
+{% endblock %}

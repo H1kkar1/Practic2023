@@ -1,0 +1,28 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+
+    {%block title%}
+        Создание статьи
+    {%endblock%}
+
+    {% block main %}
+       <div style="width: 600px; position:relative; top:50px; left:400px;">
+           <h1 style="text-align:center;">Форма для создания статьи</h1>
+           {% if form.is_multipart %}
+           <form method="post" enctype="multipart/form-data">
+           {%else%}
+           <form method="post">
+           {%endif%}
+               {% csrf_token %}
+
+               {{form.name}}<br>
+               {{form.title}}<br>
+               {{form.text}}<br>
+               {{form.img}}<br>
+
+               <p>{{err}}</p>
+               <button class="btn btn-success" type="submit" style="position:relative; left:240px;"><i class="fa-solid fa-upload"></i>  Опубликовать</button>
+           </form>
+       </div>
+    {% endblock %}

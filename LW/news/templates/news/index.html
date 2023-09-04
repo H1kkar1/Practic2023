@@ -1,0 +1,23 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+
+    {%block title%}
+        Новости
+    {%endblock%}
+
+    {% block main %}
+        {%for i in news%}
+            <div class="card border-success mb-3" style="max-width: 50rem; background: #1d1d1d; position:relative; left:300px;">
+                <div class="card-header" style="background: #181818;"><h1 style="text-align: center;">{{i.name}}</h1></div>
+                <div class="card-body">
+                    <h3 style="text-align: center;">{{i.title}}</h3>
+                    <pre>{{i.text}}</pre>
+                    {% if i.img.url != "/media/null"%}
+                    <img src="{{i.img.url}}" style="width: 400px;">
+                    {%endif%}
+                </div>
+                <p style="--font-size:10; margin-left:13px;">Дата публикации: {{i.data}} </p>
+            </div>
+        {% endfor %}
+    {% endblock %}

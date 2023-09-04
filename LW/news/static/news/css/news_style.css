@@ -1,0 +1,23 @@
+.pagination > li > a
+{
+    background-color: #2c2c2c;
+    color: white;
+}
+.pagination > .active > a
+{
+    color: black;
+    background-color: white;
+    border: solid 1px #33cc99 !Important;
+}
+.pagination > li > a:hover{
+    color:black;
+}
+
+.redi_new{
+    text-decoration: none
+
+}
+
+h3 a:hover{
+    color:#33cc66;
+}

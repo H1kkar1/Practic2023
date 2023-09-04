@@ -1,0 +1,89 @@
+body{
+    background: #2c2c2c;
+    color: #fff;
+}
+aside{
+    float: left;
+    background: #181818;
+    width:15%;
+    padding: 2.5%;
+    height: 100vh;
+    color:#fff;
+    border-right: 3px solid #4d4d4d;
+    align-self: start;
+    position:fixed;
+}
+aside .logo{
+    font-size:40px;
+    font-weight: bold;
+    position: relative;
+    margin-top:300px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul{
+    list-style: none;
+}
+aside ul li{
+    color:#fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .4s ease;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color:#33cc66;
+    transform: scale(1.05);
+}
+
+main .features{
+    float: left;
+    color:#fff;
+    margin-top:100px;
+    margin-left:100px;
+    width:75%;
+}
+main .features h1{font-size:50px;}
+main .features p{max-width=400px; margin:20px auto}
+
+.alert-warning{
+    float:left;
+    width:400px;
+}
+
+.features{
+   position: absolute;
+}
+
+nav li ul{
+width: 180px;
+display: none;
+}
+nav li ul li{
+width: 100%;
+border: 1px solid rgbs(0, 0, 0, .1);
+}
+
+nav li:hover > ul{
+display: initial;
+}
+
+#news_menu{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+}
+
+
+
